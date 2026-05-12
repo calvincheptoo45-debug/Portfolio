@@ -3,6 +3,5 @@ import App from "./App";
 
 test("renders blog title", () => {
   render(<App />);
-  const title = screen.getByText(/Calvin Cheptoo's Blog/i);
-  expect(title).toBeInTheDocument();
+  expect(screen.getByText(/Calvin Cheptoo's Blog/i)).toBeInTheDocument();
 });
