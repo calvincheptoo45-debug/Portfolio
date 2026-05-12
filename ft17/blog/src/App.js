@@ -5,16 +5,14 @@ import Footer from "./components/Footer";
 import blog from "./blog";
 
 function App() {
-  const postComponents = blog.posts.map((post) => {
-    return (
-      <Article
-        key={post.id}
-        title={post.title}
-        date={post.date}
-        preview={post.preview}
-      />
-    );
-  });
+  const postComponents = blog.posts.map((post) => (
+    <Article
+      key={post.id}
+      title={post.title}
+      date={post.date}
+      preview={post.preview}
+    />
+  ));
 
   return (
     <div className="App">
