@@ -1,3 +1,4 @@
+cat > ~/ft17/blog/src/App.js << 'EOF'
 import Header from "./components/Header";
 import About from "./components/About";
 import Article from "./components/Article";
@@ -17,7 +18,11 @@ function App() {
   return (
     <div className="App">
       <Header name={blog.name} />
-      <About name={blog.name} about={blog.about} avatar={blog.avatar} />
+      <About
+        name={blog.name}
+        about={blog.about}
+        avatar={blog.avatar}
+      />
       {postComponents}
       <Footer />
     </div>
@@ -25,3 +30,4 @@ function App() {
 }
 
 export default App;
+EOF
